@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--BULMA-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--CSS DO INDEX-->
+  <link rel="stylesheet" href="index.css">
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+  <!--Fundo teste-->
+  <link rel="stylesheet" href="fundo.css">
+  
+
+  <title>Projettus</title>
+</head>
+
+<body>
+
+  <!--NAV BAR-->
+  <nav class="navbar altNav" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img class="is-rounded" src="logo.png" width="30" height="80">  
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <!--
+        <a class="navbar-item">
+          Início
+        </a>
+        <a class="navbar-item">
+          Contatos
+        </a> -->
+        <a class="navbar-item" href="https://www.instagram.com/pro.jettus/" target="_blank">
+          <i class="fa-brands fa-instagram"></i> &nbsp Portfólio
+        </a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <br><br>
+
+  <!--APRESENTAÇÃO-->
+  <section class="apresentacao">
+    <div class="columns">
+      <div class="column"> </div>
+
+      <div class="column">
+        <span class="txt_inicial">
+          ENTREGANDO SOLUÇÕES PARA INTEGRADORES FOTOVOLTAICOS
+        </span>
+
+        <p>A Projettus é especializada em elaboração de projetos fotovoltaicos e homologação nas
+          concessionárias/distribuidoras de energia.</p>
+
+      </div>
+
+      <div class="column">
+        <form class="box imagem aumentar">
+          <p>Solicite seu projeto conosco!</p>
+          <p>Terceirize a aprovação dos seus projetos fotovoltaicos.</p>
+          <br>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <input class="input" type="number" id="potencia" min="0" max="1000" step=".01" placeholder="Potência total do projeto (kWp)" required>
+            </div>
+          </div>
+
+          <submit  class="button is-medium is-responsive button is-success" onclick="whatsapp()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+            <span>&nbsp SOLICITAR ORÇAMENTO </span>
+          </submit>
+
+        </form>
+      </div>
+
+      <div class="column"> </div>
+
+    </div>
+  </section>
+  
+  <br> <br>
+
+  <!--COMO FUNCIONA-->
+  <section class="apresentacao">
+    <div class="columns">
+      <div class="column"> </div>
+
+      <div class="column">
+        <span class="txt_inicial">
+          Como funciona?
+        </span>
+
+        <p>A Projettus realiza toda a homologação do sistema FV na concessionária de energia.</p> <br>
+
+        <p><i class="fa-solid fa-check"></i>&nbsp Memorial descritivo</p>        
+        <p><i class="fa-solid fa-check"></i>&nbsp ART de projeto e execução</p>
+        <p><i class="fa-solid fa-check"></i>&nbsp Formulário de registro da UC</p>
+        <p><i class="fa-solid fa-check"></i>&nbsp Diagrama unifilar e funcional</p>
+        <p><i class="fa-solid fa-check"></i>&nbsp Solicitação de acesso de microgeração/minigeração</p>
+
+      </div>
+
+      <div class="column">
+        <figure class="image is-2by2">
+          <img class="aumentar" src="modelo5.png">
+        </figure>
+      </div>
+
+      <div class="column"> </div>
+
+    </div>
+  </section>
+
+  <br> <br>
+
+  <!--PQ TERCEIRIZAR-->
+  <section class="apresentacao">
+    <div class="columns">
+      <div class="column"> </div>
+
+      <div class="column">
+        <!--
+        <span class="txt_inicial">
+          Por que terceirizar?
+        </span> -->
+
+        <div class="box txt_centralizado aumentar tamanhoBox">
+          <i class="fa-solid fa-circle-check fa-2xl"></i> <br> <br>
+          Serviço profissional de projeto e homologação
+        </div>
+
+        <div class="box txt_centralizado aumentar tamanhoBox">
+          <i class="fa-sharp fa-solid fa-brain fa-2xl"></i> <br> <br>
+          Suporte técnico especializado
+        </div>
+
+        <div class="box txt_centralizado aumentar tamanhoBox">
+          <i class="fa-solid fa-clipboard-check fa-2xl"></i> <br> <br>
+          Isenção total da parte burocrática
+        </div>
+
+
+      </div>
+
+      <div class="column">
+        <div class="box txt_centralizado aumentar tamanhoBox">  
+          <i class="fa-solid fa-stopwatch-20 fa-2x"></i> <br> <br>
+          Agilidade no processo de entrega da usina
+        </div>
+
+        <div class="box txt_centralizado aumentar tamanhoBox">          
+          <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i> <br> <br>
+          Foco apenas em vender
+        </div>
+
+        <div class="box txt_centralizado aumentar tamanhoBox">
+          <i class="fa-solid fa-handshake fa-2xl"></i> <br> <br>
+          Conte conosco sempre
+        </div>
+      </div>
+
+      <div class="column"> </div>
+
+    </div>
+  </section>
+
+  <br><br>
+
+  <!--PROJETOS JÁ REALIZADOS-->
+  <section class="apresentacao">
+    <div class="columns">
+
+      <div class="column"> </div>
+
+      <div class="column"> 
+        <br><br> <br><br> 
+        <div class="box txt_centralizado aumentar tamanhoBox2" onclick="voltarFoto()">
+          <i class="fa-solid fa-chevron-left  fa-2xl"></i>            
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box txt_centralizado tamanhoFotos" >
+          <span >
+            <img class="is-rounded txt_centralizado tamanhoFotos aumentar"  id="fotos_extras" src="img_extras/4.jpg">
+          </span>
+        </div>
+      </div>
+
+
+      <div class="column"> 
+        <br><br> <br><br> 
+        <div class="box txt_centralizado aumentar tamanhoBox2" onclick="passarFoto()">
+          <i class="fa-solid fa-chevron-right  fa-2xl"></i>            
+        </div>
+      </div>
+      <div class="column"> </div>
+
+    </div>
+  </section>
+  <br> <br>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column">            
+            <a  href="https://www.instagram.com/pro.jettus/" target="_blank">
+              <img class="is-rounded" src="logo.png" width="60" height="160">  <br>
+              <strong>Projettus</strong>
+            </a>            
+          </div>
+          <div class="column">            
+            <a href="https://www.instagram.com/lucas.aguiarr/" target="_blank"> 
+              <img class="is-rounded" src="img_extras/eu.jpg" width="60" height="160">  <br>
+              <strong>Eng. Lucas Aguiar</strong>
+            </a>.      
+          </div>
+          <div class="column"></div>
+        </div>  
+        Formado em Engenharia Elétrica, atua em todo o gerenciamento técnico dos projetos, garantindo que todos sejam executados com padrão e segurança, certificando assim sua aprovação.
+      </p>
+    </div>
+  </footer>
+
+  <div id="large-header" class="large-header" style="height: 340px;">
+    <canvas id="demo-canvas" width="1366" height="340"></canvas>
+    <h1 class="main-title">Connect <span class="thin">Three</span></h1>
+  </div>
+
+</body>
+
+  <!--SCRIPT DO INDEX-->
+  <script src="index.js"></script>
+
+  <script src="fundo.js"></script>
+
+</html>
